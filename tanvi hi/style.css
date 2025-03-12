@@ -1,0 +1,24 @@
+
+
+.header{
+    position:fixed;
+    top:0%;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    padding: 20px 100px;
+    background: red;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 99 ;
+       }
+
+.logo{
+text-align: left;
+color:white;
+
+      }
+      .city-box {
+        display: inline-block; 
+        margin-right: 15px; 
+    }
