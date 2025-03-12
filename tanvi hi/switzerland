@@ -4,235 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switzerland Travel</title>
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-       
-        body {
-            background: url('https://www.nordicvisitor.com/images/switzerland/view-of-the-matterhorn-with-hikers-switzerland.jpg') no-repeat center center/cover;
-            height: 95vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 50px;
-          
-        }
-
-
-
-        .navbar {
-            background: rgba(51, 51, 51, 0.8); 
-            color: white;
-            padding: 15px;
-            width: 80%;
-            display: flex;
-            justify-content:center;
-            gap: 10px;
-            margin-top: 10px;
-            border-radius: 10px;
-            z-index: 1000;
-        }
-
-        .menu-item {
-            background: transparent;
-            color: white;
-            padding: 10px 20px;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .menu-item:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-            background: gray;
-        }
-
-
-        .dropdown-container {
-            position: absolute;
-            top: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            border: 1px solid #ddd;
-            box-shadow: 0px 4px 8px rgba(159, 71, 71, 0.1);
-            width: 400px;
-            padding: 10px;
-            display: none;
-            flex-wrap: wrap;
-            justify-content: center;
-            border-radius: 5px;
-        }
-
-        .menu-item:hover .dropdown-container {
-            display: flex;
-            background:rgba(156, 156, 156, 0.8) ;
-
-        }
-
-        
-        .dropdown-item {
-            width: 1200px;
-            padding: 15px;
-            margin: 5px;
-            background: rgb(21, 70, 86);
-            border: 1px solid gray;
-            text-align: center;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .dropdown-item:hover {
-            background: black;
-        }
-
-       header{
-    position:center;
-    top:0%;
-    left: 0%;
-    display: flex;
-    width: 30%;
-    padding: 15px 10px;
-    background:rgba(51, 51, 51, 0.8);
-    justify-content: space-evenly;
-    align-items:center;
-    color: aliceblue;
-    border-radius: 10px;
-}
-.city-container {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 15px; 
-    width: 150%;
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin-top: 5px; 
-}
-
-.Destination{
-    margin-top: 680px;
-    font-family: 'Times New Roman', Times, serif;
-    width: 50%;
-    padding: 20px;
-    background-color: rgba(51, 51, 51, 0.8);
-    color: aliceblue;
-    justify-content: center;
-    display: flex;
-
-}
-.city-box {
-    width: 250px; 
-    height: 250px; 
-    background: white; 
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: larger;
+    <link rel="stylesheet" href=".vscode/style.css">
     
-    border-radius: 10px;
-    overflow: hidden; 
-}
 
-.city-box img {
-    width: 100%; 
-    height: 150px; 
-    object-fit: cover;
-}
-.city-box:hover {
-    background: rgba(0, 0, 0, 0.8); 
-    color: white; 
-    transform: scale(1.05); 
-    transition: 0.3s ease-in-out; 
-}
-.color{
-    color: white;
-    font-size:small;
-    font-family:Arial, Helvetica, sans-serif;
-}
-.login{
-    background: rgba(51, 51, 51, 0.8);
-    color: aliceblue;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.2s ease-in-out;
-    margin-left: auto;
-    top: 0%;
-}
-
-.login:hover {
-    background: #1fa174;
-}
-
-.expert-tip-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
-    width: 60%;
-    height: 150px;
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin-top: -400;
-   
-  
-    
-}
-.expert-tip:hover {
-    transform: scale(1.05); 
-    transition: 0.3s ease-in-out; 
-}
-
-.expert-tip {
-    width: 25%;
-    background: beige;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-}
-
-.expert-tip img {
-    width: 90%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-.expert-tip img:hover {
-    transform: scale(1.05); 
-    transition: 0.3s ease-in-out; 
-}
-.Destination h2 {
-    margin-top: -680px;
-    font-family: 'Times New Roman', Times, serif;
-    width: 600px;
-    height: 80px;
-    padding: 30px;
-    background-color: rgba(51, 51, 51, 0.8);
-    color: aliceblue;
-    justify-content: center;
-    display: flex;
-    font-size:larger;
-    font-style: bold;
-
-    
-}
-    </style>
 </head>
 <body>
 
@@ -242,12 +16,16 @@
 
     </header>
     
-
+    
    
     <div class="navbar">
          <div class="menu-item">
+            <a href="destination.html" style="text-decoration: none; color: inherit;">
+                <b>Destination</b>
+            </a>
             
-            <b>Destination</b>
+          
+            
             
             <div class="dropdown-container">
                 <h2>Places to visit</h2>
@@ -344,35 +122,80 @@
     </div>
  
 
-    <div class="Destination">
-        <h2>Expert Tips</h2>
+    <div class="expert-box-title">
+        <h2>Experiences to try at places</h2>
     </div>
 <div class="expert-tip-container">
     <div class="expert-tip">
         <img src="https://i.redd.it/0iivn8gh551b1.jpg" alt ="Lake Lucerne">
+        <p class="location">Lake Lucerne</p>
         <p>At Lake Lucerne, you can enjoy boat cruises on historic paddle steamers, hiking along scenic trails, cable car rides to nearby mountains like Mount Pilatus and Rigi, swimming in the lake’s clear waters, and exploring charming lakeside towns like Weggis and Vitznau.</p>
     </div>
     <div class="expert-tip">
         <img src="https://cdn.outsideonline.com/wp-content/uploads/2019/08/09/climatechange-matterhorn-dangerous_h.jpg" alt="Matterhorn">
-        <p><The Matterhorn offers world-class skiing, challenging mountaineering, scenic hiking trails, and breathtaking cable car rides, making it a paradise for adventure seekers and nature lovers</p>
+        <p class="location">Matterhorn</p>
+        <p > The Matterhorn offers world-class skiing, challenging mountaineering, scenic hiking trails, and breathtaking cable car rides, making it a paradise for adventure seekers and nature lovers</p>
     </div>
     <div class="expert-tip">
         <img src="https://images.contenthub.dev/xshiytapvw9a/2e596fdccfc819f63de49a0acfea8a4e/Polaris-2023-Winter-02%20(1).jpg?fm=jpg&fl=progressive&f=center&fit=fill&q=80&h=1080&w=1920" alt="Gornergrat Bahn">
+        <p class="location">Gornergrat Bahn</p>
         <p>The Gornergrat Bahn is a scenic mountain railway in Switzerland, offering stunning panoramic views of the Matterhorn and surrounding peaks. It takes visitors to the Gornergrat summit (3,089m), where they can enjoy breathtaking vistas, hiking trails, and the famous Kulmhotel, the highest hotel in the Alps.</p>
     </div>
     <div class="expert-tip">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ykuI35_2t6tgnwpjs5_Pz0FlgyNgvwvdwQ&s" alt="Chapel Bridge">
+        <p class="location">Chapel Bridge</p>
         <p>The Chapel Bridge (Kapellbrücke) in Lucerne, Switzerland, is a historic wooden footbridge spanning the Reuss River. Built in the 14th century, it is famous for its triangular paintings depicting Swiss history and its iconic octagonal Water Tower. It is one of Switzerland’s most photographed landmarks.</p>
     </div>
     <div class="expert-tip">
         <img src="https://cdn.internationalschoolparent.com/wp-content/uploads/2023/10/rhine-falls-switzerland-family-activity1-1024x683.jpg" alt="Rhine falls">
+        <p class="location">Rhine falls</p>
         <p>Rhine Falls (Rheinfall) in Switzerland is the largest waterfall in Europe, located near Schaffhausen. It is 23m high and 150m wide, best visited in summer (June–August) when water levels peak. Visitors can enjoy boat tours, viewing platforms, and nearby Schloss Laufen Castle for stunning views.</p>
     </div>
     <div class="expert-tip"> 
         <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/06/fc/95/pilatus-aussblick.jpg?w=1400&h=800&s=1" alt="Pilatus Luzern">
+        <p class="location">Pilatus Luzern</p>
         <p>Mount Pilatus, Lucerne – A 2,128m peak with stunning Alpine views, reached by cogwheel train, cable car, or hiking. Perfect for adventures year-round! </p>
     </div>
 </div>
+
+
+
+    <div class="footer">
+        <table class="footer-table">
+            <tr>
+                <td>
+                    <div class="footer-title">Legal Information</div>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Data Protection</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Imprint</a>
+                </td>
+                <td>
+                    <div class="footer-title">More Pages</div>
+                    
+                    <a href="#">Jobs</a>
+                    <a href="#">Partners</a>
+                    <a href="#">Apps</a>
+                    <a href="#">Annual Report</a>
+                </td>
+                <td>
+                    <div class="footer-title">Contact</div>
+                    <a href="#">Address</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Media Corner</a>
+                    <a href="#">Trade Corner</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<footer>
+    <hr class="footer-line">
+    <p>@Switzerland Tourism</p>
+</footer>
+
+</body>
+</html>
 
 
 </html>
